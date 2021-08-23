@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    border-style: none;
+}
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+body {
+  margin: 0;
+  font-family: 'Spartan', sans-serif;
+  height: 100vh;
+  background: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+  background-position: left top, right bottom;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  width: 100%;
+  padding: 0 100px;
+}
+
+.first-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    section{
+        width: 50%;
+        &:first-child{
+            width: 45%;
+        }
+
+        h1{
+            font-size: clamp(1.3rem, 2.7vw, 2.4rem);
+            color: hsl(300, 43%, 22%);
+            width: 70%;
+        }
+    
+        p{
+            color: hsl(303, 10%, 53%);
+            margin-top: -20px;
+            line-height: 1.5;
+        }
+    
+        &:nth-child(2){
+            .rating{
+                display: inline-flex;
+                align-items: center;
+                background-color: hsl(300, 24%, 96%);
+                padding: 5px 30px;
+                width: 80%;
+                border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+
+                &:not(:last-child){
+                    margin-bottom: 15px;
+                }
+
+                &:nth-child(2){
+                    margin-left: 30px;
+                }
+
+                &:nth-child(3){
+                    margin-left: 60px;
+                }
+        
+                h2{
+                    margin-left: 30px;
+                    font-size: 1rem;
+                    color: hsl(300, 43%, 22%);
+                }
+            }
+        }
+    }
+}
+
+
+.second-row{
+    display: flex;
+    margin-top: 50px;
+
+    .card{
+        background-color: hsl(300, 43%, 22%);
+        border-radius: 7px;
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        -ms-border-radius: 7px;
+        -o-border-radius: 7px;
+        padding: 50px 20px;
+        height: min-content;
+        
+        &:not(:last-child){
+            margin-right: 20px;
+        }
+
+        &:nth-child(2){
+            margin-top: 20px;
+        }
+
+        &:nth-child(3){
+            margin-top: 40px;
+        }
+
+        .buyer{
+            display: flex;
+            align-items: center;
+            img{
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                height: 60px;
+                margin-right: 20px;
+            }
+    
+            h2{
+                color: hsl(0, 0%, 100%);
+                margin: 0;
+                margin-bottom: 5px;
+                font-size: 1.1rem;
+            }
+    
+            span{
+                color: hsl(333, 68%, 46%);
+                font-size: 1rem;
+            }
+        }
+
+        p{
+            color: hsl(300, 24%, 96%);
+            margin-top: 40px;
+            line-height: 1.7;
+        }
+    }
+}
+
+@media screen and (max-width: 414px) {
+   body{
+        background: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
+        background-position: left top, right bottom;
+        height: min-content;
+   }
+
+    main{
+       padding: 40px 20px;
+        .first-row{
+           flex-direction: column;
+            section{
+                width: 100%;
+
+                &:first-child{
+                    width: 100%;
+                }
+
+                h1{
+                    text-align: center;
+                    width: 100%;
+                    padding: 0 40px;
+                }
+
+                p{
+                    text-align: center;
+                    margin-top: 20px;
+                }
+
+                &:nth-child(2){
+                    margin-top: 40px;
+
+                    .rating{
+                        width: 100%;
+                        flex-direction: column;
+
+                        &:nth-child(2), &:nth-child(3){
+                            margin-left: 0;
+                        }
+
+                        h2{
+                            font-size: .75rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .second-row{
+            flex-direction: column;
+            
+            .card{
+                width: 100%;
+            }
+        }
+    }
+}
+

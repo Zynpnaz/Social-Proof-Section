@@ -1,2 +1,187 @@
-@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
+img {
+  max-width: 100%;
+  border-style: none;
+}
+
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+body {
+  margin: 0;
+  font-family: "Spartan", sans-serif;
+  height: 100vh;
+  background: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+  background-position: left top, right bottom;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  width: 100%;
+  padding: 0 100px;
+}
+
+.first-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.first-row section {
+  width: 50%;
+}
+.first-row section:first-child {
+  width: 45%;
+}
+.first-row section h1 {
+  font-size: clamp(1.3rem, 2.7vw, 2.4rem);
+  color: #502050;
+  width: 70%;
+}
+.first-row section p {
+  color: #937b92;
+  margin-top: -20px;
+  line-height: 1.5;
+}
+.first-row section:nth-child(2) .rating {
+  display: inline-flex;
+  align-items: center;
+  background-color: #f7f2f7;
+  padding: 5px 30px;
+  width: 80%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.first-row section:nth-child(2) .rating:not(:last-child) {
+  margin-bottom: 15px;
+}
+.first-row section:nth-child(2) .rating:nth-child(2) {
+  margin-left: 30px;
+}
+.first-row section:nth-child(2) .rating:nth-child(3) {
+  margin-left: 60px;
+}
+.first-row section:nth-child(2) .rating h2 {
+  margin-left: 30px;
+  font-size: 1rem;
+  color: #502050;
+}
+
+.second-row {
+  display: flex;
+  margin-top: 50px;
+}
+.second-row .card {
+  background-color: #502050;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  padding: 50px 20px;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+.second-row .card:not(:last-child) {
+  margin-right: 20px;
+}
+.second-row .card:nth-child(2) {
+  margin-top: 20px;
+}
+.second-row .card:nth-child(3) {
+  margin-top: 40px;
+}
+.second-row .card .buyer {
+  display: flex;
+  align-items: center;
+}
+.second-row .card .buyer img {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  height: 60px;
+  margin-right: 20px;
+}
+.second-row .card .buyer h2 {
+  color: white;
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+.second-row .card .buyer span {
+  color: #c5266d;
+  font-size: 1rem;
+}
+.second-row .card p {
+  color: #f7f2f7;
+  margin-top: 40px;
+  line-height: 1.7;
+}
+
+@media screen and (max-width: 414px) {
+  body {
+    background: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
+    background-position: left top, right bottom;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+  }
+
+  main {
+    padding: 40px 20px;
+  }
+  main .first-row {
+    flex-direction: column;
+  }
+  main .first-row section {
+    width: 100%;
+  }
+  main .first-row section:first-child {
+    width: 100%;
+  }
+  main .first-row section h1 {
+    text-align: center;
+    width: 100%;
+    padding: 0 40px;
+  }
+  main .first-row section p {
+    text-align: center;
+    margin-top: 20px;
+  }
+  main .first-row section:nth-child(2) {
+    margin-top: 40px;
+  }
+  main .first-row section:nth-child(2) .rating {
+    width: 100%;
+    flex-direction: column;
+  }
+  main .first-row section:nth-child(2) .rating:nth-child(2), main .first-row section:nth-child(2) .rating:nth-child(3) {
+    margin-left: 0;
+  }
+  main .first-row section:nth-child(2) .rating h2 {
+    font-size: 0.75rem;
+  }
+  main .second-row {
+    flex-direction: column;
+  }
+  main .second-row .card {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
