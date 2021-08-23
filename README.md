@@ -10,3 +10,7 @@ Users should be able to:
 
 - View the optimal layout for the section depending on their device's screen size
 
+### Screenshot
+
+![output](https://user-images.githubusercontent.com/62498978/130517899-f7392d67-daad-4df3-b995-8ee46121546b.png)
+
