@@ -12,5 +12,6 @@ Users should be able to:
 
 ### Screenshot
 
-![output](https://user-images.githubusercontent.com/62498978/130517899-f7392d67-daad-4df3-b995-8ee46121546b.png)
+![output](https://user-images.githubusercontent.com/62498978/131331070-d27e7423-3286-4990-af3f-5755f49868d3.png)
+
 
