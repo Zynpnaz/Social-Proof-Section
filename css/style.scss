@@ -20,15 +20,17 @@ body {
   height: 100vh;
   background: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
   background-position: left top, right bottom;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  background-repeat: no-repeat;
 }
 
 main {
   width: 100%;
   padding: 0 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
 }
 
 .first-row{
@@ -155,8 +157,9 @@ main {
    body{
         background: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
         background-position: left top, right bottom;
+        background-repeat: no-repeat;
         height: min-content;
-   }
+    }
 
     main{
        padding: 40px 20px;
